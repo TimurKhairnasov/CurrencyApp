@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.currencyapp.viewmodel.CurrencyViewModel" />
+
+        <variable
+            name="rate"
+            type="com.example.currencyapp.model.CurrencyRate" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/exchange_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@{rate.name}"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="₽/$" />
+
+        <TextView
+            android:id="@+id/currency_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@{rate.currencyFrom}"
+            android:textSize="16sp"
+            tools:text="USD" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currency_rate1"
+            style="@style/Input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLines="1"
+            android:onTextChanged="@{(text, start, before, count) -> model.countInputChanged(rate.name, text, before, count)}"
+            android:padding="8dp"
+            android:textSize="16sp"
+            app:clearInput="@{model.clearInput}"
+            app:hint="@{rate.mutableCount}"
+            tools:text="0.0" />
+
+        <TextView
+            android:id="@+id/currency_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@{rate.currencyTo}"
+            android:textSize="16sp"
+            tools:text="RUB" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currency_rate2"
+            style="@style/Input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLines="1"
+            android:onTextChanged="@{(text, start, before, count) -> model.amountInputChanged(rate.name, text, before, count)}"
+            android:padding="8dp"
+            android:textSize="16sp"
+            app:clearInput="@{model.clearInput}"
+            app:hint="@{rate.mutableAmount}"
+            tools:text="0.0" />
+    </LinearLayout>
+
+</layout>

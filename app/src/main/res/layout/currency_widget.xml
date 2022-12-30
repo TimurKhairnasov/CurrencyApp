@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.CurrencyApp.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:theme="@style/Theme.CurrencyApp.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/currency_name_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="$/₽"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textStyle="normal"
+            android:layout_marginEnd="16dp"/>
+        <TextView
+            android:id="@+id/currency_rate_1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="73.50"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/currency_name_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="₽/₸"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_marginEnd="16dp"/>
+        <TextView
+            android:id="@+id/currency_rate_2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="6.7"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/currency_name_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="₽/$"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_marginEnd="16dp"/>
+        <TextView
+            android:id="@+id/currency_rate_3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="100k / 1.5k"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_update"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="5dp"
+        android:clickable="true"
+        android:background="@drawable/ripple"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/update_time_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/updated"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white_transparent"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/update_time_data"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="15:00 01.02.2022"
+            android:shadowColor="@color/black_transparent"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white_transparent"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

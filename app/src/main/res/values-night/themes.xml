@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CurrencyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/black</item>
+    </style>
+    <style name="Input">
+        <item name="android:background">@drawable/input_background</item>
+        <item name="android:textColorHint">@color/white_transparent</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:background">@color/black_transparent</item>
+    </style>
+    <style name="Button">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

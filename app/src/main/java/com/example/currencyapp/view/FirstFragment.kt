@@ -82,5 +82,6 @@ class FirstFragment : Fragment() {
         _binding = null
         currentId = 0
         currentId = -1
+        currentId = -2
     }
 }

@@ -81,5 +81,6 @@ class FirstFragment : Fragment() {
         super.onDestroyView()
         _binding = null
         currentId = 0
+        currentId = -1
     }
 }

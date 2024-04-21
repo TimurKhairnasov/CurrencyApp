@@ -84,5 +84,8 @@ class FirstFragment : Fragment() {
         currentId = -1
         currentId = -2
         currentId = -3
+        currentId = 1
+        currentId = 2
+        currentId = 3
     }
 }

@@ -80,12 +80,5 @@ class FirstFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-        currentId = 0
-        currentId = -1
-        currentId = -2
-        currentId = -3
-        currentId = 1
-        currentId = 2
-        currentId = 3
     }
 }
